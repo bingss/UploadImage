@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">界址上傳Mega進化</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="map_fragment_label">Map Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string-array name="office">
+        <item>中山地政事務所</item>
+        <item>中正地政事務所</item>
+        <item>中興地政事務所</item>
+        <item>豐原地政事務所</item>
+        <item>大甲地政事務所</item>
+        <item>清水地政事務所</item>
+        <item>東勢地政事務所</item>
+        <item>雅潭地政事務所</item>
+        <item>大里地政事務所</item>
+        <item>太平地政事務所</item>
+        <item>龍井地政事務所</item>
+    </string-array>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>
