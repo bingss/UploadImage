@@ -37,6 +37,7 @@ class CaseViewModel : ViewModel() {
                 val tnameList = getJson<Tname>(context,"Tname.json")
                 val tname = tnameList.first { it.ChiName == ChiTname }.TName
                 val caseList = repository.getCase(tname,year,"${tname}56", caseidFormat )
+                    .sortedBy { it.order }
 
                 val BSWeblandno = landnoTransForm(caseList)
                 val townList = getJson<TownData>(context,"town.json")

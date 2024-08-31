@@ -11,7 +11,8 @@ data class CaseData(
     val caseid: String= "",
     @SerializedName("MT04")
     val sectno: String= "",
-    val MT05: String= "",
+    @SerializedName("MT05")
+    val order: Int,
     @SerializedName("MT06")
     val landno: String= "",
     val MT07: Any? = null,

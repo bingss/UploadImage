@@ -42,17 +42,17 @@ suspend fun zipPDF(context: Context, pointList: List<PointData>,pdfName :String)
     }
 
     val pdfFile = cratePDF(savePath,pointList,pdfName,context)
-    val zipFile = zipFile(savePath,pdfFile)
+    val zip = zipFile(savePath,pdfFile)
 
-    return zipFile
+    return zip
 }
 
 suspend fun deleteFile(path:String){
     withContext(Dispatchers.IO) {
         //刪除上一次上傳檔案
-        val deleteFile = File(path)
-        if (deleteFile.isDirectory) {
-            for (file in deleteFile.listFiles()!!) file.delete()
+        val delFile = File(path)
+        if (delFile.isDirectory) {
+            for (file in delFile.listFiles()!!) file.delete()
         }
     }
 }
@@ -119,8 +119,9 @@ suspend fun cratePDF (
         pdf.close()
         pdfDocument.close()
         writer.close()
-
         pdfFile
+
+
     }
 }
 

@@ -31,7 +31,6 @@ class CaseRepository {
         return withContext(Dispatchers.IO){
 
             val response = lohasApi.uploadFile(filePath,caseId,caseId,multipartZipFile)
-
             if(response.isSuccessful){
                 true
             }

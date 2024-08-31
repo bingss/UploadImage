@@ -34,7 +34,6 @@ import com.example.uploadimagetest.fragments.adapter.ImgAdapter
 import com.example.uploadimagetest.fragments.adapter.PointAdapter
 import com.example.uploadimagetest.listener.PointClickListener
 import com.example.uploadimagetest.util.MapManager
-import com.example.uploadimagetest.util.RealPathUtil
 import com.example.uploadimagetest.util.deleteFile
 import com.example.uploadimagetest.util.getPhotoFileUri
 import com.example.uploadimagetest.util.showLog

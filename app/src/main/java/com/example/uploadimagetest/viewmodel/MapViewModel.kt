@@ -60,11 +60,11 @@ class MapViewModel():ViewModel() {
             try {
                 _currentState.value = UiState.LOADING
                 if(_polyJson.length() == 0){
-                    val landIinfo:Map<String,String> = mapOf(
+                    val landInfoMap:Map<String,String> = mapOf(
                         "type" to "1", "city" to "B", "town" to bundle.town,"sectno" to bundle.sectno,
                         "landno" to bundle.landno,"city_name" to "", "town_name" to "","sect_name" to "")
-                    val landInfo = _repository.getLandInfo(landIinfo)
-                    htmlToJson(landInfo)
+                    val landInfoHtml = _repository.getLandInfo(landInfoMap)
+                    htmlToJson(landInfoHtml)
                 }
                 _currentState.value = UiState.IDLE
 
@@ -123,8 +123,8 @@ class MapViewModel():ViewModel() {
         _isMapMode.value = !_isMapMode.value!!
     }
 
-    private fun htmlToJson(landInfo:String?){
-        val landSplit = landInfo?.split("var map_geo_json='","var geo_json='","initMap('map');")
+    private fun htmlToJson(landInfoHtml:String?){
+        val landSplit = landInfoHtml?.split("var map_geo_json='","var geo_json='","initMap('map');")
         val polyJsonString = landSplit?.get(1)?.replace("';","")
         val pointJsonString = landSplit?.get(2)?.replace("';","")
         _polyJson = JSONObject(polyJsonString!!)

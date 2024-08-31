@@ -9,7 +9,7 @@
     <EditText
         android:id="@+id/account_EditText"
         android:layout_width="300dp"
-        android:layout_height="45dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="172dp"
         android:ems="10"
         android:hint="帳號"
@@ -21,7 +21,7 @@
     <EditText
         android:id="@+id/password_editText"
         android:layout_width="300dp"
-        android:layout_height="45dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:ems="10"
         android:hint="密碼"
@@ -32,8 +32,8 @@
 
     <Button
         android:id="@+id/login_button"
-        android:layout_width="88dp"
-        android:layout_height="48dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="登入"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
