@@ -27,7 +27,7 @@ interface BSWebService {
     }
 
     // data:{type:'1',city:'B',town:'B25',sectno:'9336',landno:'544',city_name:'臺中市',town_name:'龍井區',sect_name:'竹師段'}
-    @Headers("user-agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0")
+    @Headers("user-agent:Mozilla/5.0 (Linux; Android 7.1.2; Pixel) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.71 Mobile Safari/537.36")
     @FormUrlEncoded
     @POST("GetData_getParcelData")
     suspend fun getLandInfo(
