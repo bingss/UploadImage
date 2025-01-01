@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/0e21e2ff-1213-4bda-aba0-2f7059986515)![image](https://github.com/user-attachments/assets/bd081882-1452-41db-8c66-78b6901d03ab)### 界址照片上傳APP
+### 界址上傳APP，測繪成果隨地傳
 
 特色：
  - 由手機登入臺中市後端GIS管理平台
